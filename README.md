@@ -47,9 +47,8 @@ FULL：除了 HEADERS 中定义的信息之外，还有请求和响应的正文�
 
 配置日志信息对应的Bean、在yml中开启日志的Feign客户端
 
+#### OpenFeign启动测试：localhost/consumer/payment/get/1，因为集成了ribbon，所以自带负载均衡配置项，8001、8002交替访问。
 
-OpenFeign启动测试：localhost/consumer/payment/get/1，因为集成了ribbon，所以自带负载均衡配置项，8001、8002交替访问。
+#### OpenFeign超时控制测试：localhost/consumer/payment/feign/timeout，如果未在yml中配置相关信息，则访问页面报错；配置之后可以正常访问。
 
-OpenFeign超时控制测试：localhost/consumer/payment/feign/timeout，如果未在yml中配置相关信息，则访问页面报错；配置之后可以正常访问。
-
-OpenFeign日志信息测试：配置好Bean（config包下）和yml，localhost/consumer/payment/get/1，即可在IDEA控制台中看到日志信息。
+#### OpenFeign日志信息测试：配置好Bean（config包下）和yml，localhost/consumer/payment/get/1，即可在IDEA控制台中看到日志信息。
